@@ -182,7 +182,7 @@ aggregator = PIDTreeAggregator()
 SUMMARY_INTERVAL = 30  # seconds between automatic summary dumps
 last_summary = time.time()
 
-with open(log_file, "a", newline="") as f:
+with open(log_file, "w", newline="") as f:
     writer = csv.writer(f)
 
     if not file_exists:
